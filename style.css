@@ -1,0 +1,120 @@
+/* Allgemeine Einstellungen */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FF69B4; /* Pink */
+    font-family: 'Cadillac', sans-serif;
+    text-align: center;
+  }
+  
+  #title {
+    font-size: 3rem;
+    color: #ADD8E6; /* Hellblau */
+    text-shadow: 2px 2px 5px black;
+  }
+  
+  /* Spielfeld */
+  #game-container {
+    position: relative;
+    margin: 0 auto;
+    width: 600px;
+    height: 600px;
+    background-color: #ADD8E6; /* Hellblau */
+    border: 5px solid black;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  /* Spielfigur */
+  #player {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-image: url('girl.png');
+    background-size: cover;
+    top: 20px;
+    left: 20px;
+  }
+  
+  /* Herzen */
+  .heart {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    animation: blink 1s infinite alternate;
+  }
+  
+  #heart1 { background-image: url('heart1.png'); }
+  #heart2 { background-image: url('heart2.png'); }
+  #heart3 { background-image: url('heart3.png'); }
+  #heart4 { background-image: url('heart1.png'); }
+  #heart5 { background-image: url('heart2.png'); }
+  #heart6 { background-image: url('heart3.png'); }
+  #heart7 { background-image: url('heart1.png'); }
+  #heart8 { background-image: url('heart2.png'); }
+  #heart9 { background-image: url('heart3.png'); }
+  
+  @keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0.7; }
+  }
+  
+  /* Pfeile */
+  .arrow {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+  }
+  
+  #arrow1 { top: 80px; left: 150px; }
+  #arrow2 { top: 80px; left: 350px; }
+  #arrow3 { top: 290px; left: 150px; }
+  #arrow4 { top: 290px; left: 350px; }
+  #arrow5 { top: 490px; left: 150px; }
+  #arrow6 { top: 490px; left: 350px; }
+  #arrow7 { top: 150px; left: 75px; }
+  #arrow8 { top: 150px; left: 280px; }
+  #arrow9 { top: 360px; left: 75px; }
+  #arrow10 { top: 360px; left: 280px; }
+  #arrow11 { top: 150px; left: 482px; }
+  #arrow12 { top: 360px; left: 482px; }
+
+  /* Pop-up Fenster */
+  #popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 3px solid black;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 10;
+  }
+  
+  #popup button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
